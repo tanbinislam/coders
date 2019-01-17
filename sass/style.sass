@@ -1,0 +1,500 @@
+$gr: #4cad94
+$gct: rgba(76,173,148,0.6)
+$ubuntu: 'Ubuntu', sans-serif
+
+@font-face
+    font-family: $ubuntu
+    src: url(fonts/Ubuntu-Regular.ttf)
+*
+    margin: 0px
+    padding: 0px
+    outline: 0px
+
+ul,ol
+    list-style-type: none
+    
+a
+    text-decoration: none
+    
+img
+    border: 0px
+
+body
+    font-family: $ubuntu
+    
+.site-nav
+    border-radius: 0px
+    padding: 10px 10px
+    margin: 0
+#about, #team, #userstory, #package, #contact
+    h2
+        text-transform: capitalize
+        font-weight: bold
+        color: $gr
+        margin-bottom: 30px
+    .wd
+        font-size: 14px
+        max-width: 600px
+        text-align: center
+        margin: 0 auto
+        margin-bottom: 30px
+#menu
+    ul
+        
+        li
+            margin-left: 30px
+            margin-top: 20px
+            a
+                padding: 10px 10px
+                text-decoration: none
+                color: #fff
+                font-weight: bold
+                font-size: 16px
+                transition: all linear 0.3s
+                position: relative
+                &:after
+                    content: ""
+                    width: 0%
+                    position: absolute
+                    height: 3px
+                    background-color: $gr
+                    left: 0
+                    bottom: 0px
+                    transition: all linear 0.3s
+                &:hover
+                    color: $gr
+                &:hover:after       
+                    content: ""
+                    width: 100%
+                    position: absolute
+                    height: 3px
+                    background-color: $gr
+                    left: 0
+                    bottom: -18px
+#banner
+    margin: 0
+    padding: 0
+    height: 100%
+    padding-top: 50px
+    padding-bottom: 50px
+    overflow: hidden
+    position: relative
+    video
+        position: absolute
+        top: 50%
+        left: 50%
+        min-width: 100%
+        min-height: 100%
+        width: auto
+        height: auto
+        z-index: -10
+        transform: translateX(-50%) translateY(-50%)
+        overflow: hidden
+    h2
+        color: $gr
+        font-size: 48px
+        font-weight: bold
+        text-align: center
+        text-transform: capitalize
+        margin-bottom: 20px
+        margin-top: 150px
+    p
+        color: #fff
+        max-width: 550px
+        margin: 0 auto
+    a.mc
+        display: block
+        color: #fff
+        background: $gr
+        padding: 10px 15px
+        text-decoration: none
+        margin: 0 auto
+        margin-top: 50px
+        margin-bottom: 50px
+        width: 120px
+        font-size: 16px
+        font-weight: bold
+        border-radius: 5px
+    .form
+        background-color: $gr
+        padding: 20px 10px
+        border-radius: 5px
+        margin-bottom: 0px
+        h3
+            color: #fff
+            text-align: center
+            text-transform: capitalize
+            margin-bottom: 30px
+        label
+            color: #fff
+            margin-left: 5px
+        button.reg
+            background-color: #fff
+            color: $gr
+            width: 50%
+            font-weight: bold
+            font-size: 16px
+            transition: all linear 0.3s
+            text-align: center
+            &:hover
+                color: #000
+
+#about
+    padding: 50px 0px
+    button
+        background-color: $gr
+        color: #fff
+        font-size: 18px
+        margin-left: 5px
+        margin-right: 5px
+        border-radius: 5px
+        width: 90px
+    .design
+        margin-top: 70px
+        margin-bottom: 70px
+        i
+            margin-top: 50px
+            margin-bottom: 20px
+            height: 98px
+            width: 98px
+            border: 2px solid $gr
+            border-radius: 50%
+            background-color: $gr
+            text-align: center
+            line-height: 98px
+            font-size: 60px
+            font-size: 45px
+            color: #fff
+            transition: all linear 0.3s
+            &:hover
+                color: $gr
+                background: #fff
+                border: 2px solid $gr
+        h3
+            margin-top: 20px
+            font-size: 22px
+            text-transform: uppercase
+            color: $gr
+        p
+            max-width: 300px
+            font-size: 14px
+            margin: 0 auto
+            text-align: center
+    .create, .manage
+        margin-top: 70px
+        margin-bottom: 70px
+        display: none
+        img
+            box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.5)
+        h3
+            margin-top: 50px
+            font-size: 28px
+            text-transform: capitalize
+            font-weight: bold
+            color: $gr
+        p
+            margin-top: 20px
+            font-size: 14px
+        a
+            text-decoration: none
+            font-size: 14px
+            text-align: left
+            display: block
+            background-color: $gr
+            color: #fff
+            width: 120px
+            padding: 10px 15px
+            margin: 0 auto
+            margin-top: 20px
+            border-radius: 5px
+            transition: all linear 0.3s
+            margin-bottom: 50px
+            i
+                font-size: 14px
+                margin-left: 3px
+                transform: translateX(0px)
+                transition: all linear 0.3s
+            &:hover
+                i
+                    transform: translateX(7px)
+            
+#team
+    padding-bottom: 50px
+    img
+        padding: 10px
+        border: 1px dashed rgba(0,0,0,0.5)
+        border-radius: 5px
+        margin: 0 auto
+    h3
+        font-size: 20px
+        color: $gr
+        margin-top: 30px
+    p
+        font-size: 14px
+        max-width: 250px
+        margin: 0 auto
+        margin-top: 20px
+        margin-bottom: 20px
+    ul
+        max-width: 120px
+        margin: 0px auto
+        margin-top: 10px
+        margin-bottom: 30px
+        li
+            float: left
+            margin: 5px
+            margin-bottom: 50px
+            a
+                height: 30px
+                width: 30px
+                display: block
+                background-color: $gr
+                color: #fff
+                line-height: 30px
+                border-radius: 3px
+                transition: all linear 0.3s
+                &:hover
+                    background-color: #fff
+                    color: $gr
+                    border: 1px solid $gr
+#counter
+    background: url('../images/counter-bg.jpg') no-repeat
+    background-attachment: fixed
+    background-position: center center
+    position: relative
+    margin: 0
+    padding: 0
+    z-index: 5
+    overflow: hidden
+    &:before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 1000px
+        top: 0
+        left: 0
+        z-index: -2
+        background-color: $gct
+    i
+        font-size: 60px
+        color: #fff
+        margin-top: 50px
+        margin-bottom: 30px
+        font-weight: bold
+    .counter-number
+        color: #fff
+        font-size: 30px
+        margin-top: 30px
+        margin-bottom: 30px
+        font-weight: bold
+    .counter-text
+        color: #fff
+        font-size: 20px
+        margin-bottom: 50px
+        text-transform: capitalize
+#userstory
+    margin-top: 50px
+    margin-bottom: 50px
+    #review-slider
+        .carousel-inner
+            img
+                max-width: 120px
+                padding: 5px
+                border: 1px solid $gr
+                border-radius: 3px
+                margin: 0 auto
+                margin-top: 50px
+                margin-bottom: 20px
+            p
+                max-width: 650px
+                text-align: center
+                margin: 0 auto
+            h3
+                color: $gr
+        .carousel-indicators
+            bottom: -30px
+            li
+                height: 5px
+                width: 20px
+                background-color: rgba(0,0,0,0.5)
+                border: 0px
+#package
+    margin: 50px 0
+    .pkg
+        background-color: $gr
+        max-width: 300px
+        margin: 0 auto
+        color: #fff
+        border-radius: 5px
+        padding: 0 20px
+        transition: all linear 0.3s
+        &:hover
+            background-color: #fff
+            border: 2px solid $gr
+            color: $gr
+            ul
+                li
+                    border-top: 1px solid $gr
+            button
+                background-color: $gr
+                color: #fff
+            
+        h3
+            font-size: 30px
+            text-transform: uppercase
+            font-weight: bold
+            padding-top: 30px
+        i
+            font-size: 50px
+            margin-top: 10px
+            margin-bottom: 10px
+        p
+            font-size: 35px
+            font-weight: bold
+            span
+                font-size: 18px
+                font-weight: normal
+        ul
+            margin-top: 20px
+            margin-bottom: 30px
+            li
+                margin-top: 8px
+                font-size: 16px
+                padding-top: 10px
+                border-top: 1px solid #fff
+        button
+            width: 200px
+            margin: 0 auto
+            margin-bottom: 50px
+            background-color: #fff
+            color: $gr
+            text-transform: uppercase
+            font-size: 20px
+            font-weight: bold
+            transition: all linear 0.3s
+            &:hover
+                background-color: #fff
+                border: 2px solid $gr
+                color: $gr
+            
+#contact
+    margin: 50px 0px
+    .frm
+        background-color: $gr
+        padding: 30px
+        border-radius: 5px
+        margin-top: 30px
+        margin-bottom: 20px
+        button.sub
+            width: 150px
+            height: 40px
+            margin: 0 auto
+            margin-top: 30px
+            background: #fff
+            transition: all linear 0.3s
+            position: relative
+            overflow: hidden
+            span
+                background: #fff
+                color: $gr
+                font-size: 16px
+                font-weight: bold
+                text-transform: uppercase
+                transition: all linear 0.3s
+                position: absolute
+                top: 9px
+                left: 45px
+                z-index: 2
+            i
+                position: absolute
+                left: 90px
+                top: 10px
+                transition: all linear 0.3s
+                color: $gr
+                font-size: 16px
+                z-index: 1
+            &:hover
+                span
+                    left: 30px
+                i
+                    left: 100px
+    .addr
+        background-color: $gr
+        height: 100%
+        padding-top: 120px
+        padding-right: 50px
+        padding-bottom: 20px
+        padding-left: 50px
+        border-radius: 5px
+        margin-top: 30px
+        margin-bottom: 20px
+        position: relative
+        i
+            font-size: 150px
+            color: #fff
+            position: absolute
+            left: 25%
+            top: 13px
+            transform-origin: center center 0px 
+            transition: all 0.2s ease 0s
+            z-index: 1
+            overflow: hidden
+        h3
+            color: $gr
+            padding-top: 10px
+            padding-bottom: 10px
+            font-size: 25px
+            font-weight: bold
+            position: absolute
+            top: -2px
+            left: 31%
+            z-index: 2
+            span
+                display: block
+                padding-top: 25px
+        address
+            display: block
+            background-color: $gr
+            color: #fff
+            font-size: 16px
+            padding-top: 10px
+            margin-top: 40px
+            border-top: 3px solid #fff
+            z-index: 3
+footer
+    background-color: #222
+    margin: 0
+    padding: 0
+    color: #fff
+    padding-bottom: 30px
+    .c-right
+        p
+            display: inline-block
+    .f-nav
+        display: block
+        ul
+            max-width: 260px
+            height: 70px
+            margin: 0 auto
+            margin-top: 30px
+            li
+                float: left
+                margin-left: 5px
+                margin-right: 5px
+                height: 40px
+                width: 42px
+                a
+                    text-decoration: none
+                    color: #fff
+                    font-size: 25px
+                    transition: all linear 0.3s
+                    line-height: 50px
+                    &:hover
+                        color: $gr
+    
+
+@media (min-width: 300px) and (max-width: 767px)
+    #about
+        button
+            font-size: 16px
+            max-width: 80px
